@@ -17,7 +17,7 @@ const ProductList = ({ productData,onAddToCart,isOpenModalDetail}) => {
               <img className="w-100" src={item.image} alt={item.name} />
               <div className="body-item">
                 <h4>{item.name}</h4>
-                <h4>{item.price} $</h4>
+                <h4>${item.price}</h4>
               </div>
               <button type="button" className="btn btn-success"
                 data-bs-toggle="modal"
