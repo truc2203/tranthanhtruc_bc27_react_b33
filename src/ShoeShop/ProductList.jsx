@@ -12,9 +12,9 @@ const ProductList = ({ productData,onAddToCart,isOpenModalDetail}) => {
     <div className="d-flex flex-wrap">
       {productData.map((item) => {
         return (
-          <div key={item.id} className="col-4 p-3">
+          <div key={item.id} className="animate__animated animate__zoomIn col-4 p-3">
             <div className="border-r p-3">
-              <img className="w-100" src={item.image} alt={item.name} />
+              <img className="scale-img w-100" src={item.image} alt={item.name} />
               <div className="body-item">
                 <h4 className="bg-radien">{item.name}</h4>
                 <h4 className="bg-radien">${item.price}</h4>
