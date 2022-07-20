@@ -13,19 +13,19 @@ const ProductList = ({ productData,onAddToCart,isOpenModalDetail}) => {
       {productData.map((item) => {
         return (
           <div key={item.id} className="col-4 p-3">
-            <div className="border border-dark border-3 p-3">
+            <div className="border-r p-3">
               <img className="w-100" src={item.image} alt={item.name} />
               <div className="body-item">
-                <h4>{item.name}</h4>
-                <h4>${item.price}</h4>
+                <h4 className="bg-radien">{item.name}</h4>
+                <h4 className="bg-radien">${item.price}</h4>
               </div>
-              <button type="button" className="btn btn-success"
+              <button type="button" className="btn btn-success bg-radien"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
                 onClick={() => handleAddToCart(item)}>
                 Add to card
               </button>
-              <button className="btn btn-dark ms-3" onClick={() => handleShowDetail(item)}>Details</button>
+              <button className="btn btn-dark ms-3 bg-radien" onClick={() => handleShowDetail(item)}>Details</button>
             </div>
           </div>
         );

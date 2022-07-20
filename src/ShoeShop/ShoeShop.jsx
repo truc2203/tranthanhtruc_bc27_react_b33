@@ -59,11 +59,11 @@ export default class ShoeShop extends Component {
   render() {
     const { selectItem, carts, isOpenModalDetail, isOpenModalCart } = this.state
     return (
-      <div className='container'>
+      <div className='container bg-light'>
         <h1 className='text-center bg-dark text-light'>Shoe Shop</h1>
         <div className='my-5'>
           <div className='text-end'>
-            <button onClick={this.handleShowCart} className='btn btn-success'>Cart</button>
+            <button onClick={this.handleShowCart} className='btn btn-success bg-radien'>Cart</button>
           </div>
           <ProductList productData={data}
             onAddToCart={this.handleAddToCart}

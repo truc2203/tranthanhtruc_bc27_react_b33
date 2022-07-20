@@ -1,6 +1,24 @@
-.container{
-    background-image: url('../../public/background.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.container {
+  /* background-image: url("../../public/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
+.bg-radien {
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn{
+    font-weight: 600;
+}
+.border-r{
+    border: 2px solid #170727;
+    border-radius: 12px;
+}
+
+
+
+
+
+
